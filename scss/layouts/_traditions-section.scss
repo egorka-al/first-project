@@ -1,0 +1,55 @@
+.traditions-section {
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin: 20px;
+
+@media screen and (min-width:$bp-desktop) {
+    padding-top: 96px; 
+}    
+
+&__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
+}
+
+&__content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 711px;
+}    
+
+&__title {
+    font-size: 36px;
+    font-weight: 900;
+@media screen and (min-width: $bp-desktop) {
+    font-size: 64px;
+}    
+    
+@media screen and (min-width: $bp-desktop) {
+    margin-bottom: 42px;
+}
+    }
+
+&__baker-image {
+    display: none;
+
+@media screen and (min-width: $bp-desktop) {
+    display: block;
+}
+    border-radius: 200px 200px 0 0;
+}
+
+&__text {
+    font-size: 15px;
+    margin-bottom: 20px;
+    &__limited {
+        max-width: 340px;
+    }
+
+@media screen and (min-width: $bp-desktop) {
+    font-size: 18px;
+}
+  }
+}
+

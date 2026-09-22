@@ -1,0 +1,9 @@
+.links {
+    color: var(--color-brand-primary-light);
+    transition: color 1s, scale 0.5s;
+}
+
+.links:hover {
+    color: var(--color-brand);
+    scale: 1.1;
+}

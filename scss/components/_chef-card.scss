@@ -1,0 +1,43 @@
+.chef-card {
+    display: flex;
+    gap: 30px;
+
+&__photo {
+    width: 140px;
+    height: 226px;
+    border-radius: 4px 4px 4px 200px ;
+    box-shadow: -5px 5px 0 0 var(--color-brand-primary-light), -5px 5px 0 1px var(--color-brand-brown);
+
+@media screen and (min-width: $bp-desktop) {
+    width: 241px;
+    height: 390px;
+    box-shadow: -14px 14px 0 0 var(--color-brand-primary-light), -14px 14px 0 2px var(--color-brand-brown);
+}
+}
+
+&__name {
+    font-size: 24px;
+
+@media screen and (min-width: $bp-desktop) {
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: 900;
+}    
+    
+}
+
+&__text {
+    font-size: 14px;
+    padding-bottom: 2px;
+
+@media screen and (min-width: $bp-desktop) {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+    
+&:last-child {
+    margin-bottom: 0px;
+    }
+  }
+
+}

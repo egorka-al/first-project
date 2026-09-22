@@ -1,0 +1,157 @@
+.footer { 
+    position: relative;
+    background-image: url('../images/footer-background.png');
+    background-color: var(--color-brand-pimary-dark);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 32px;
+
+&__container {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+
+@media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    text-align: start;
+    font-size: 18px;
+}    
+ }
+ 
+&__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; 
+    text-align: left;
+    flex-basis: 50%;
+ }
+
+&__logo {
+   
+    flex-grow: 1;
+ }
+
+&__logo img {
+    cursor: pointer; 
+    width: 76px;
+    height: 38px;
+
+@media screen and (min-width: $bp-tablet) {
+    width: 108px;
+    height: 46px;
+}
+ }
+
+&__menu {
+    flex-grow: 1;
+ }
+
+&__menu li {
+    margin-bottom: 16px;
+ }
+
+ &__menu li:last-child {
+    margin-bottom: 0;
+ } 
+
+&__adress {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+
+    @media screen and (min-width: $bp-tablet) {
+           flex-direction: row;
+           justify-content: space-between;
+           flex-basis: 50%;
+           text-align: start;
+         }    
+ }
+
+&__contacts li {
+    margin-bottom: 16px;
+ }    
+
+&__contacts li:last-child {
+    margin-bottom: 0px;
+ }    
+
+&__socials {
+    display: flex;
+    
+@media screen and (max-width: $bp-tablet) {
+    align-items: start;
+    justify-content: center;
+}    
+}
+
+&__adress-social {
+    margin-right: 22px;
+    fill: var(--color-brand-primary-light);
+    transition: fill 0.5s;
+ }
+
+&__adress-social:hover {
+    fill: var(--color-brand);
+ }
+
+&__info li {
+    margin-bottom: 16px;
+ }
+
+
+&__adress-link {
+    color: var(--color-brand-primary-light);
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+
+@media screen and (min-width: $bp-tablet) {
+    font-size: 18px;
+}    
+ }
+
+&__adress-link:hover {
+    color: var(--color-brand);
+ }
+
+&__adress-copyright {
+    color: #A18268;
+    font-style: 14px;
+    font-weight: 400;
+    margin: 0;
+ }
+
+}
+
+.footer::before, 
+.footer::after {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.footer::before {
+    width: 220px;
+    height: 160px;
+    background-size: 220px 160px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-image: url('../images/decor-bread-small.png');
+    content: '';
+}
+
+.footer::after {
+    position: absolute;
+    width: 380px;
+    height: 190px;
+    background-size: 380px 190px;
+    right: 0;
+    background-image: url('../images/decor-bread-large.png');
+
+}
